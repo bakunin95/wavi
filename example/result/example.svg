@@ -18,17 +18,19 @@
 <!-- website_example/css/bar.css -->
 <g id="node4" class="node"><title>website_example/css/bar.css</title>
 <polygon fill="palegreen" stroke="black" points="152.5,-33.5 152.5,-69.5 299.5,-69.5 299.5,-33.5 152.5,-33.5"/>
-<text text-anchor="middle" x="226" y="-48.4" font-family="Times New Roman,serif" font-size="12.00">website_example/css/bar.css</text>
+<text text-anchor="middle" x="226" y="-54.9" font-family="Times New Roman,serif" font-size="12.00">«CSS»</text>
+<text text-anchor="middle" x="226" y="-41.9" font-family="Times New Roman,serif" font-size="12.00">website_example/css/bar.css</text>
 </g>
 <!-- website_example/bar.html&#45;&gt;website_example/css/bar.css -->
-<g id="edge7" class="edge"><title>website_example/bar.html&#45;&gt;website_example/css/bar.css</title>
+<g id="edge5" class="edge"><title>website_example/bar.html&#45;&gt;website_example/css/bar.css</title>
 <path fill="none" stroke="black" d="M226,-139.327C226,-123.143 226,-98.6307 226,-79.7733"/>
 <polygon fill="black" stroke="black" points="229.5,-79.699 226,-69.699 222.5,-79.699 229.5,-79.699"/>
 </g>
 <!-- website_example/css/main.css -->
 <g id="node5" class="node"><title>website_example/css/main.css</title>
 <polygon fill="palegreen" stroke="black" points="317.5,-33.5 317.5,-69.5 470.5,-69.5 470.5,-33.5 317.5,-33.5"/>
-<text text-anchor="middle" x="394" y="-48.4" font-family="Times New Roman,serif" font-size="12.00">website_example/css/main.css</text>
+<text text-anchor="middle" x="394" y="-54.9" font-family="Times New Roman,serif" font-size="12.00">«CSS»</text>
+<text text-anchor="middle" x="394" y="-41.9" font-family="Times New Roman,serif" font-size="12.00">website_example/css/main.css</text>
 </g>
 <!-- website_example/bar.html&#45;&gt;website_example/css/main.css -->
 <g id="edge4" class="edge"><title>website_example/bar.html&#45;&gt;website_example/css/main.css</title>
@@ -59,7 +61,7 @@
 <text text-anchor="middle" x="396" y="-147.9" font-family="Times New Roman,serif" font-size="12.00">website_example/foo.html</text>
 </g>
 <!-- website_example/foo.html&#45;&gt;website_example/css/main.css -->
-<g id="edge6" class="edge"><title>website_example/foo.html&#45;&gt;website_example/css/main.css</title>
+<g id="edge7" class="edge"><title>website_example/foo.html&#45;&gt;website_example/css/main.css</title>
 <path fill="none" stroke="black" d="M395.67,-139.327C395.359,-123.143 394.887,-98.6307 394.524,-79.7733"/>
 <polygon fill="black" stroke="black" points="398.022,-79.6298 394.331,-69.699 391.024,-79.7645 398.022,-79.6298"/>
 </g>
@@ -76,7 +78,7 @@
 <text text-anchor="start" x="497" y="-7.9" font-family="Times New Roman,serif" font-size="12.00">fooFuncB()</text>
 </g>
 <!-- website_example/foo.html&#45;&gt;website_example/js/foo.js -->
-<g id="edge5" class="edge"><title>website_example/foo.html&#45;&gt;website_example/js/foo.js</title>
+<g id="edge8" class="edge"><title>website_example/foo.html&#45;&gt;website_example/js/foo.js</title>
 <path fill="none" stroke="black" d="M422.574,-139.447C438.879,-128.965 460.172,-115.242 479,-103 479.402,-102.739 479.805,-102.476 480.21,-102.213"/>
 <polygon fill="black" stroke="black" points="482.36,-104.99 488.829,-96.5986 478.539,-99.1243 482.36,-104.99"/>
 </g>
@@ -87,12 +89,12 @@
 <text text-anchor="middle" x="556" y="-147.9" font-family="Times New Roman,serif" font-size="12.00">website_example/index.html</text>
 </g>
 <!-- website_example/index.html&#45;&gt;website_example/css/main.css -->
-<g id="edge8" class="edge"><title>website_example/index.html&#45;&gt;website_example/css/main.css</title>
+<g id="edge6" class="edge"><title>website_example/index.html&#45;&gt;website_example/css/main.css</title>
 <path fill="none" stroke="black" d="M529.249,-139.327C501.848,-121.736 459.118,-94.3043 429.034,-74.991"/>
 <polygon fill="black" stroke="black" points="430.827,-71.9832 420.521,-69.5261 427.046,-77.8738 430.827,-71.9832"/>
 </g>
 <!-- website_example/index.html&#45;&gt;website_example/js/foo.js -->
-<g id="edge1" class="edge"><title>website_example/index.html&#45;&gt;website_example/js/foo.js</title>
+<g id="edge3" class="edge"><title>website_example/index.html&#45;&gt;website_example/js/foo.js</title>
 <path fill="none" stroke="black" d="M556,-139.327C556,-131.876 556,-122.66 556,-113.043"/>
 <polygon fill="black" stroke="black" points="559.5,-112.934 556,-102.934 552.5,-112.934 559.5,-112.934"/>
 </g>
@@ -106,7 +108,7 @@
 <polyline fill="none" stroke="black" points="641,-35 781,-35 "/>
 </g>
 <!-- website_example/index.html&#45;&gt;website_example/js/foo2.js -->
-<g id="edge3" class="edge"><title>website_example/index.html&#45;&gt;website_example/js/foo2.js</title>
+<g id="edge1" class="edge"><title>website_example/index.html&#45;&gt;website_example/js/foo2.js</title>
 <path fill="none" stroke="black" d="M581.595,-139.327C599.285,-127.457 623.653,-111.107 646.475,-95.7941"/>
 <polygon fill="black" stroke="black" points="648.444,-98.6877 654.798,-90.2095 644.544,-92.8749 648.444,-98.6877"/>
 </g>

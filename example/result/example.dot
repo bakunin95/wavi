@@ -2,17 +2,17 @@ digraph G {
   "website_example/bar.html" [ label = "{&laquo;HTML»\nwebsite_example/bar.html}", fontsize = 12, shape = record, style = "filled", fillcolor = "lavenderblush" ];
   "website_example/foo.html" [ label = "{&laquo;HTML»\nwebsite_example/foo.html}", fontsize = 12, shape = record, style = "filled", fillcolor = "lavenderblush" ];
   "website_example/index.html" [ label = "{&laquo;HTML»\nwebsite_example/index.html}", fontsize = 12, shape = record, style = "filled", fillcolor = "lavenderblush" ];
-  "website_example/css/bar.css" [ fontsize = 12, shape = record, style = "filled", fillcolor = "palegreen" ];
-  "website_example/css/main.css" [ fontsize = 12, shape = record, style = "filled", fillcolor = "palegreen" ];
-  "website_example/js/bar.js" [ label = "{&laquo;JavaScript»\nwebsite_example/js/bar.js|a\lb\l|barFunc()\lbarFuncB()\l}", fontsize = 12, shape = record, style = "filled", fillcolor = "aliceblue" ];
+  "website_example/css/bar.css" [ label = "{&laquo;CSS»\nwebsite_example/css/bar.css}", fontsize = 12, shape = record, style = "filled", fillcolor = "palegreen" ];
+  "website_example/css/main.css" [ label = "{&laquo;CSS»\nwebsite_example/css/main.css}", fontsize = 12, shape = record, style = "filled", fillcolor = "palegreen" ];
   "website_example/js/foo.js" [ label = "{&laquo;JavaScript»\nwebsite_example/js/foo.js|c\ld\l|fooFuncA()\lfooFuncB()\l}", fontsize = 12, shape = record, style = "filled", fillcolor = "aliceblue" ];
+  "website_example/js/bar.js" [ label = "{&laquo;JavaScript»\nwebsite_example/js/bar.js|a\lb\l|barFunc()\lbarFuncB()\l}", fontsize = 12, shape = record, style = "filled", fillcolor = "aliceblue" ];
   "website_example/js/foo2.js" [ label = "{&laquo;JavaScript»\nwebsite_example/js/foo2.js|foo\l|\l}", fontsize = 12, shape = record, style = "filled", fillcolor = "aliceblue" ];
-  "website_example/foo.html" -> "website_example/js/foo.js";
   "website_example/foo.html" -> "website_example/css/main.css";
-  "website_example/bar.html" -> "website_example/css/bar.css";
   "website_example/index.html" -> "website_example/css/main.css";
-  "website_example/index.html" -> "website_example/js/foo2.js";
-  "website_example/index.html" -> "website_example/js/foo.js";
+  "website_example/foo.html" -> "website_example/js/foo.js";
+  "website_example/bar.html" -> "website_example/css/bar.css";
   "website_example/bar.html" -> "website_example/js/bar.js";
   "website_example/bar.html" -> "website_example/css/main.css";
+  "website_example/index.html" -> "website_example/js/foo2.js";
+  "website_example/index.html" -> "website_example/js/foo.js";
 }
