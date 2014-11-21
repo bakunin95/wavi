@@ -1,14 +1,14 @@
 WAVI
 ===
 
-Web Application Viewer (Node.js)
-```
+###Web Application Viewer (Node.js)
+
 Generate a class diagram graph for node.js web application inspired by the Web Application Extension (WAE) for UML.
 It is also possible to generate a json report listing files and their relations with metrics.
 
 WAVI is intended for developers who wish to document their web application or as a reverse engineering tool to recover 
 the structure of a web application.
-```
+
 
 ## Dependency
 ```
@@ -21,14 +21,14 @@ Require Graphviz installed and PATH variable for Graphviz in your environment.
 ```
 
 ##Usage: 
-```
+
 It is strongly advised to use svg format for very large website because jpg/png/pdf are limited in width and height and will most likly not work
 or use ratio and the quality will be bad.
 
 wavi --format path/to/website path/to/result/file.type
+
+
 ```
-
-
 wavi --svg website_example result/example.svg
 
 wavi --jpg website_example result/example.jpg
@@ -43,11 +43,11 @@ wavi --json website_example result/example.json
 ```
 
 ##Example:
-```
-![Example1](bakunin95.github.com/wavi/example/example.svg)
+
+![Example](/example/result/example.png?raw=true "Example")
 
 run example/example.cmd in node console
-```
+
 
 ##JSON report:
 ```
@@ -56,7 +56,7 @@ compatible with d3.js graph.
 
 example of JSON structure coming soon
 
-##Contribution
+##Contributions
 
 This is a big project to help developers generate quality class diagram. WAVI is in early development and all contributions are welcomed.
 For more info on the project contact me at jugle66@hotmail.com
