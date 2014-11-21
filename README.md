@@ -1,7 +1,4 @@
-WAVI
-===
-
-###Web Application Viewer (Node.js)
+##WAVI Web Application Viewer (Node.js)
 
 Generate a class diagram graph for node.js web application inspired by the Web Application Extension (WAE) for UML.
 It is also possible to generate a json report listing files and their relations with metrics.
