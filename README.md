@@ -44,7 +44,8 @@ wavi --json website_example result/example.json
 
 ##Example:
 
-![Example1](https://raw.github.com/bakunin95/wavi/master/example/example.png)
+![Example](/example/result/example.png?raw=true "Example")
+
 run example/example.cmd in node console
 
 
