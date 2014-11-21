@@ -50,7 +50,7 @@ run example/example.cmd in node console
 
 
 ##JSON report:
-```
+
 List of all nodes and links with escomplex metrics.
 compatible with d3.js graph.
 
@@ -61,7 +61,7 @@ example of JSON structure coming soon
 This is a big project to help developers generate quality class diagram. WAVI is in early development and all contributions are welcomed.
 For more info on the project contact me at jugle66@hotmail.com
 
-```
+
 ## License
 
 The MIT License (MIT)
