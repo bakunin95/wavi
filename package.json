@@ -6,6 +6,7 @@
   "main": "./lib/wavi.js",
   "url" : "https://github.com/bakunin95/wavi",
   "repository": {
+    "type": "git",
     "url": "https://github.com/bakunin95/wavi"
   },
    "keywords": [
