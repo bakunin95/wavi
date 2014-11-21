@@ -2,7 +2,7 @@
   "author": "bakunin95",
   "email" : "jugle66@hotmail.com",
   "name": "wavi",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "./lib/wavi.js",
   "url" : "https://github.com/bakunin95/wavi",
   "repository": {
