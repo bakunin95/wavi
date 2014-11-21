@@ -1,11 +1,18 @@
 {
-  "author": "Bakunin95",
+  "author": "bakunin95",
+  "email" : "jugle66@hotmail.com",
   "name": "wavi",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "main": "./lib/wavi.js",
+  "url" : "https://github.com/bakunin95/wavi",
   "repository": {
-    "url": ""
+    "url": "https://github.com/bakunin95/wavi"
   },
+  "licenses": [
+  {
+    "type": "MIT"
+  }
+  ],
   "engines": {
     "node": ">=0.10.0"
   },
