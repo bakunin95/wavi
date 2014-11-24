@@ -9,7 +9,7 @@ the structure of a web application.
 
 ## Dependency
 ```
-Require Graphviz installed and PATH variable for Graphviz in your environment.
+Require Graphviz installed and PATH variable for Graphviz in your environment variable.
 
 ## Installation
 
@@ -17,7 +17,7 @@ Require Graphviz installed and PATH variable for Graphviz in your environment.
 
 ```
 
-##Usage: 
+##Usage (CLI): 
 
 It is strongly advised to use svg format for very large website because jpg/png/pdf are limited in width and height and will most likly not work
 or use ratio and the quality will be bad.
@@ -26,32 +26,56 @@ wavi --format path/to/website path/to/result/file.type
 
 
 ```
-wavi --svg website_example result/example.svg
+wavi --svg website/example result/example.svg
 
-wavi --jpg website_example result/example.jpg
+wavi --jpg website/example result/example.jpg
 
-wavi --png website_example result/example.png
+wavi --png website/example result/example.png
 
-wavi --pdf website_example result/example.pdf
+wavi --pdf website/example result/example.pdf
 
-wavi --dot website_example result/example.dot
+wavi --dot website/example result/example.dot
 
-wavi --json website_example result/example.json
+wavi --svg website/example result/example.svg --skipnodemodules
+
 ```
+
+##Usage: 
+
+wavi.generateGraph("format","website/example","result/file.type",skipnodemodules ...
+
+```
+var wavi = require("wavi");
+
+wavi.generateGraph("svg","website/example","result/example2.svg",false,function(err){
+
+});
+```
+
+##Parameter
+
+--skipnodemodules : skip node_modules folder, use this parameter to speed up extraction if "node_modules" is not needed.
+
 
 ##Example:
 
 ![Example](/example/result/example.png?raw=true "Example")
 
-run example/example.cmd in node console
+run example/example.cmd in node console or node example
 
 
-##JSON report:
+##TROUBLESHOOTING
 
-List of all nodes and links with escomplex metrics.
-compatible with d3.js graph.
+-If you get a RangeError 
+```
+RangeError: Maximum call stack size exceeded
+```
+This means that the website is too big to generate a diagram. You can divide the diagram by pointing subfolders instead of pointing to the whole web application.
+"node_modules" often contain too much information for wavi, it is a good idea to ignore this folder with the --skipnodemodules parameter.
 
-example of JSON structure coming soon
+
+-If your web application is too large and your image is empty or the quality of the image is bad, this means that there is
+not sufficent space to draw the diagram. Try using "svg" format.
 
 ##Contributions
 

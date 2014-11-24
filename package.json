@@ -1,51 +1,50 @@
 {
   "author": "bakunin95",
-  "email" : "jugle66@hotmail.com",
+  "email": "jugle66@hotmail.com",
   "name": "wavi",
-  "version": "0.1.1",
-  "main": "./lib/wavi.js",
-  "url" : "https://github.com/bakunin95/wavi",
+  "version": "0.1.2",
+  "main": "./index.js",
+  "url": "https://github.com/bakunin95/wavi",
   "repository": {
     "type": "git",
     "url": "https://github.com/bakunin95/wavi"
   },
-   "keywords": [
-  "class",
-  "diagram",
-  "reverse",
-  "engineering"
+  "keywords": [
+    "class",
+    "diagram",
+    "reverse",
+    "engineering",
+    "document",
+    "documentation",
+    "generate",
+    "datamining",
+    "visualization",
+    "dot",
+    "graphviz",
+    "model",
+    "cli",
+    "web",
+    "application",
+    "wavi",
+    "relex"
   ],
-  "description": "Generate a class diagram graph for node.js web application inspired by the Web Application Extension (WAE) for UML. It is also possible to generate a json report listing files and their relations with metrics.",
+  "description": "Generate a class diagram for node.js web application inspired by the Web Application Extension (WAE) for UML.",
   "licenses": [
-  {
-    "type": "MIT"
-  }
+    {
+      "type": "MIT"
+    }
   ],
   "engines": {
     "node": ">=0.10.0"
   },
   "dependencies": {
     "async": "^0.9.0",
-    "cheerio": "^0.17.0",
     "commander": "^2.3.0",
-    "complexity-report": "^1.0.3",
-    "csslint": "^0.10.0",
-    "detective": "^3.1.0",
-    "detective-amd": "^2.1.5",
-    "escomplex-js": "^0.1.4",
-    "esprima": "^1.2.2",
-    "esquery": "^0.3.0",
-    "estraverse": "^1.5.0",
-    "express": "~4.0.0",
-    "express-session": "~1.0.2",
-    "fs-extra": "^0.10.0",
     "graceful-fs": "^3.0.2",
     "graphviz": "0.0.8",
-    "jshint": "^2.5.1",
-    "jslint": "^0.5.2",
-    "lodash": "~2.4.1",
     "nedb": "^0.11.1",
     "process": "^0.7.0",
+    "relex": "^0.1.0",
     "underscore": "^1.7.0"
   },
   "devDependencies": {},

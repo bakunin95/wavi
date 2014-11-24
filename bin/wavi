@@ -15,6 +15,7 @@ program
   .option('--pdf', 'generate pdf graph')
   .option('--svg', 'generate svg graph')
   .option('--dot', 'generate dot graph')
+  .option('--skipnodemodules', 'skip node_modules folder')
   .parse(process.argv);
 
   if(program.args.length == 0){
