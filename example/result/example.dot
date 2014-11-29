@@ -1,0 +1,20 @@
+digraph G {
+  "website_example/a.html" [ label = "{&laquo;HTML»\nwebsite_example/a.html}", fontsize = 12, shape = record, style = "filled", fillcolor = "lavenderblush" ];
+  "website_example/b.html" [ label = "{&laquo;HTML»\nwebsite_example/b.html}", fontsize = 12, shape = record, style = "filled", fillcolor = "lavenderblush" ];
+  "website_example/c.html" [ label = "{&laquo;HTML»\nwebsite_example/c.html}", fontsize = 12, shape = record, style = "filled", fillcolor = "lavenderblush" ];
+  "website_example/css/a.css" [ label = "{&laquo;CSS»\nwebsite_example/css/a.css}", fontsize = 12, shape = record, style = "filled", fillcolor = "palegreen" ];
+  "website_example/css/main.css" [ label = "{&laquo;CSS»\nwebsite_example/css/main.css}", fontsize = 12, shape = record, style = "filled", fillcolor = "palegreen" ];
+  "website_example/js/s.js" [ label = "{&laquo;JavaScript»\nwebsite_example/js/s.js|a\lb\l|barFunc()\lbarFuncB()\l}", fontsize = 12, shape = record, style = "filled", fillcolor = "aliceblue" ];
+  "website_example/js/sClass.js" [ label = "{&laquo;JavaScript»\nwebsite_example/js/sClass.js|c\ld\l|fooFuncA()\lfooFuncB()\l}", fontsize = 12, shape = record, style = "filled", fillcolor = "aliceblue" ];
+  "website_example/js/s1.js" [ label = "{&laquo;JavaScript»\nwebsite_example/js/s1.js|foo\l|\l}", fontsize = 12, shape = record, style = "filled", fillcolor = "aliceblue" ];
+  "website_example/b.html" -> "website_example/c.html";
+  "website_example/c.html" -> "website_example/js/sClass.js";
+  "website_example/b.html" -> "website_example/js/s.js";
+  "website_example/b.html" -> "website_example/css/main.css";
+  "website_example/a.html" -> "website_example/b.html";
+  "website_example/c.html" -> "website_example/js/s.js";
+  "website_example/a.html" -> "website_example/js/s1.js";
+  "website_example/c.html" -> "website_example/css/a.css";
+  "website_example/a.html" -> "website_example/css/a.css";
+  "website_example/a.html" -> "website_example/c.html";
+}

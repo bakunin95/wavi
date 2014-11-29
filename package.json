@@ -1,0 +1,67 @@
+{
+  "author": {
+    "name": "bakunin95"
+  },
+  "email": "jugle66@hotmail.com",
+  "name": "wavi",
+  "version": "0.1.2",
+  "main": "./index.js",
+  "url": "https://github.com/bakunin95/wavi",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bakunin95/wavi"
+  },
+  "keywords": [
+    "class",
+    "diagram",
+    "reverse",
+    "engineering",
+    "document",
+    "documentation",
+    "generate",
+    "datamining",
+    "visualization",
+    "dot",
+    "graphviz",
+    "model",
+    "cli",
+    "web",
+    "application",
+    "wavi",
+    "relex"
+  ],
+  "description": "Generate a class diagram for node.js web application inspired by the Web Application Extension (WAE) for UML.",
+  "licenses": [
+    {
+      "type": "MIT"
+    }
+  ],
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "dependencies": {
+    "async": "^0.9.0",
+    "commander": "^2.3.0",
+    "graceful-fs": "^3.0.2",
+    "graphviz": "0.0.8",
+    "nedb": "^0.11.1",
+    "process": "^0.7.0",
+    "relex": "^0.1.0",
+    "underscore": "^1.7.0"
+  },
+  "devDependencies": {},
+  "bin": {
+    "wavi": "./bin/wavi"
+  },
+  "readme": "##WAVI Web Application Viewer (Node.js)\r\n\r\nGenerate a class diagram graph for node.js web application inspired by the Web Application Extension (WAE) for UML.\r\nIt is also possible to generate a json report listing files and their relations with metrics.\r\n\r\nWAVI is intended for developers who wish to document their web application or as a reverse engineering tool to recover \r\nthe structure of a web application.\r\n\r\n\r\n## Dependency\r\n```\r\nRequire Graphviz installed and PATH variable for Graphviz in your environment variable.\r\n\r\n## Installation\r\n\r\n    $ npm install wavi -g\r\n\r\n```\r\n\r\n##Usage (CLI): \r\n\r\nIt is strongly advised to use svg format for very large website because jpg/png/pdf are limited in width and height and will most likly not work\r\nor use ratio and the quality will be bad.\r\n\r\nwavi --format path/to/website path/to/result/file.type\r\n\r\n\r\n```\r\nwavi --svg website/example result/example.svg\r\n\r\nwavi --jpg website/example result/example.jpg\r\n\r\nwavi --png website/example result/example.png\r\n\r\nwavi --pdf website/example result/example.pdf\r\n\r\nwavi --dot website/example result/example.dot\r\n\r\nwavi --svg website/example result/example.svg --skipnodemodules\r\n\r\n```\r\n\r\n##Usage: \r\n\r\nwavi.generateGraph(\"format\",\"website/example\",\"result/file.type\",skipnodemodules ...\r\n\r\n```\r\nvar wavi = require(\"wavi\");\r\n\r\nwavi.generateGraph(\"svg\",\"website/example\",\"result/example2.svg\",false,function(err){\r\n\r\n});\r\n```\r\n\r\n##Parameter\r\n\r\n--skipnodemodules : skip node_modules folder, use this parameter to speed up extraction if \"node_modules\" is not needed.\r\n\r\n\r\n##Example:\r\n\r\n![Example](/example/result/example.png?raw=true \"Example\")\r\n\r\nrun example/example.cmd in node console or node example\r\n\r\n\r\n##TROUBLESHOOTING\r\n\r\n-If you get a RangeError \r\n```\r\nRangeError: Maximum call stack size exceeded\r\n```\r\nThis means that the website is too big to generate a diagram. You can divide the diagram by pointing subfolders instead of pointing to the whole web application.\r\n\"node_modules\" often contain too much information for wavi, it is a good idea to ignore this folder with the --skipnodemodules parameter.\r\n\r\n\r\n-If your web application is too large and your image is empty or the quality of the image is bad, this means that there is\r\nnot sufficent space to draw the diagram. Try using \"svg\" format.\r\n\r\n##Contributions\r\n\r\nThis is a big project to help developers generate quality class diagram. WAVI is in early development and all contributions are welcomed.\r\nFor more info on the project contact me at jugle66@hotmail.com\r\n\r\n\r\n## License\r\n\r\nThe MIT License (MIT)\r\nCopyright (c) 2014 Bakunin95\r\nPermission is hereby granted, free of charge, to any person obtaining a copy\r\nof this software and associated documentation files (the \"Software\"), to deal\r\nin the Software without restriction, including without limitation the rights\r\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\r\ncopies of the Software, and to permit persons to whom the Software is\r\nfurnished to do so, subject to the following conditions:\r\nThe above copyright notice and this permission notice shall be included in all\r\ncopies or substantial portions of the Software.\r\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\r\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\r\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\r\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\r\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\r\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\r\nSOFTWARE.\r\n",
+  "readmeFilename": "README.md",
+  "gitHead": "e2e8f77a8af4cb348a649435806f0b743417bcab",
+  "bugs": {
+    "url": "https://github.com/bakunin95/wavi/issues"
+  },
+  "homepage": "https://github.com/bakunin95/wavi",
+  "_id": "wavi@0.1.2",
+  "scripts": {},
+  "_shasum": "294767f5bd1fd4001788bde8a0e2e65e561ee968",
+  "_from": "wavi@"
+}
