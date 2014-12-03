@@ -4,7 +4,7 @@
   },
   "email": "jugle66@hotmail.com",
   "name": "wavi",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "main": "./index.js",
   "url": "https://github.com/bakunin95/wavi",
   "repository": {
@@ -30,7 +30,7 @@
     "wavi",
     "relex"
   ],
-  "description": "Generate a class diagram for node.js web application inspired by the Web Application Extension (WAE) for UML.",
+  "description": "Generate a class diagram for node.js web application inspired by the Web Application Extension (WAE) for UML. Document your application with wavi.",
   "licenses": [
     {
       "type": "MIT"
@@ -46,7 +46,7 @@
     "graphviz": "0.0.8",
     "nedb": "^0.11.1",
     "process": "^0.7.0",
-    "relex": "^0.1.7",
+    "relex": "^0.1.8",
     "underscore": "^1.7.0"
   },
   "devDependencies": {},
