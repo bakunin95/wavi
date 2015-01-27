@@ -28,7 +28,7 @@ exports.generateGraph = function(type,website_path,result_file,include_node_modu
 };
 exports.generateGraphFromJSON = function(type,report,result_file,cbGenGraphtwo) {
 
-	if(type == "jpg" || type == "png" || type == "svg" || type == "dot" || type == "pdf"){
+	if(type === "jpg" || type === "png" || type === "svg" || type === "dot" || type === "pdf" || type === "archvis"){
 
 		graphvizClass.generateGraph(JSON.stringify(report),type,result_file,true,function(err){
 			
@@ -39,7 +39,7 @@ exports.generateGraphFromJSON = function(type,report,result_file,cbGenGraphtwo) 
 		}); 
 	}
 	else{
-		cbGenGraph(err,"");
+		cbGenGraphtwo(null,"");
 	}
 
 	function errorHandler(err){
