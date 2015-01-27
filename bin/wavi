@@ -8,7 +8,7 @@ var program = require('commander'),
     constants = require( '../lib/deps/utilities/constants' );
 
 program
-  .version('0.2.0')
+  .version('0.2.1')
   .option('--json', 'generate json report')
   .option('--jpg', 'generate jpg graph')
   .option('--png', 'generate png graph')
