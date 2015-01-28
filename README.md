@@ -63,6 +63,14 @@ wavi.generateGraph("svg","website/example","result/example2.svg",false,function(
 
 run example/example.cmd in node console or node example
 
+Here are the result of wavi on a couple of framework.
+[AngularJs](https://blogwavi.files.wordpress.com/2015/01/angularclassdiagram.jpg)
+
+[JqueryUI](https://blogwavi.files.wordpress.com/2015/01/jqueryuiclassdiagram.jpg)
+
+[Jquery](https://blogwavi.files.wordpress.com/2015/01/jqueryuiclassdiagram.jpg)
+
+[More at the wavi blog](https://blogwavi.wordpress.com/)
 
 ##TROUBLESHOOTING
 
