@@ -1,25 +1,34 @@
 digraph G {
-	graph [splines=true];
+	graph [splines=true, overlap=prism];
 	node [label="\N"];
-	graph [bb="0,0,765,633"];
-	n3 [label="{&laquo;CSS»\nwebsite_example/css/a.css|p\l}", shape=record, style=filled, fillcolor=palegreen, pos="83.41,387.17", rects="-0.089628,379.67,166.91,417.67 -0.089628,356.67,166.91,379.67", width="2.3125", height="0.86111"];
-	n7 [label="{&laquo;CSS»\nwebsite_example/css/main.css|body\lfoo\lbar\l}", shape=record, style=filled, fillcolor=palegreen, pos="671.78,150.21", rects="578.28,157.71,765.28,195.71 578.28,104.71,765.28,157.71", width="2.5903", height="1.2778"];
-	n0 [label="{&laquo;HTML»\nwebsite_example/a.html}", shape=record, style=filled, fillcolor=lavenderblush, pos="302.5,398.54", rects="228,379.54,377,417.54", width="2.0625", height="0.54167"];
-	n5 [label="{&laquo;HTML»\nwebsite_example/c.html}", shape=record, style=filled, fillcolor=lavenderblush, pos="204.96,189.96", rects="129.96,170.96,279.96,208.96", width="2.0833", height="0.54167"];
-	n1 [label="{&laquo;HTML»\nwebsite_example/b.html}", shape=record, style=filled, fillcolor=lavenderblush, pos="433.01,224.18", rects="357.51,205.18,508.51,243.18", width="2.0903", height="0.54167"];
-	n6 [label="{&laquo;JavaScript»\nwebsite_example/js/s.js|barFunc()\lbarFuncB()\l}", shape=record, style=filled, fillcolor=aliceblue, pos="247.94,257.42", rects="174.44,257.42,321.44,295.42 174.44,219.42,321.44,257.42", width="2.0347", height="1.0694"];
-	n2 [label="{&laquo;JavaScript»\nwebsite_example/js/s1.js}", shape=record, style=filled, fillcolor=aliceblue, pos="361.69,613.59", rects="284.69,594.59,438.69,632.59", width="2.1389", height="0.54167"];
-	n4 [label="{&laquo;JavaScript»\nwebsite_example/js/sClass.js}", shape=record, style=filled, fillcolor=aliceblue, pos="174.35,142.94", rects="85.35,123.94,263.35,161.94", width="2.4722", height="0.54167"];
-	n8 [label="{&laquo;JavaScript Object»\nfooClass|string varA:a\lstring varB:b\l|fooFuncA()\lfooFuncB()\l}", shape=record, style=filled, fillcolor=CornflowerBlue, pos="116.4,57.933", rects="50.901,76.933,181.9,114.93 50.901,38.933,181.9,76.933 50.901,0.93284,181.9,38.933", width="1.8125", height="1.5972"];
-	n0 -> n1 [pos="e,418.68,243.33 316.97,379.22 340.25,348.11 386.12,286.83 412.68,251.34"];
-	n1 -> n5 [pos="e,279.98,201.22 357.39,212.83 335.8,209.59 312.13,206.04 290.02,202.72"];
-	n0 -> n5 [pos="e,175.94,209.15 260.27,379.46 229.34,362.95 189.68,335.83 171.24,298.62 156.25,268.37 155.23,251.83 171.45,218.11"];
-	n0 -> n3 [pos="e,167.26,391.53 227.72,394.66 211.6,393.83 194.36,392.93 177.61,392.06"];
-	n1 -> n7 [pos="e,578.03,179.25 494.5,205.13 517.04,198.15 543.22,190.04 568.43,182.23"];
-	n5 -> n3 [pos="e,94.483,356.41 178.17,208.99 175.69,211.28 173.32,213.71 171.24,216.22 138.22,256.09 112.96,310.41 98.191,347.04"];
-	n0 -> n2 [pos="e,356.44,594.55 307.75,417.63 318.17,455.49 341.51,540.28 353.79,584.89"];
-	n1 -> n6 [pos="e,321.45,244.22 357.47,237.75 348.92,239.28 340.17,240.86 331.53,242.41"];
-	n5 -> n6 [pos="e,223.58,219.19 217.16,209.11 217.48,209.61 217.8,210.11 218.12,210.62"];
-	n5 -> n4 [pos="e,186.89,162.2 192.51,170.83 192.45,170.75 192.39,170.66 192.33,170.57"];
-	n4 -> n8 [pos="e,155.26,114.94 161.2,123.65 161.14,123.57 161.08,123.48 161.02,123.39"];
+	graph [bb="0,0,763,524"];
+	subgraph cluster_6 {
+		graph [style=filled,
+			color=gray28,
+			fillcolor=gray90,
+			label="[inside website_example/js/sClass.js]",
+			bb="361.3,322.7,584.3,476.7"];
+		n20 [label="{&laquo;JavaScript Object»\nfooClass|string varA: a\lstring varB: b\l|fooFuncA()\lfooFuncB()\l}", shape=record, style=filled, fillcolor=CornflowerBlue, pos="472.97,388.36", rects="407.47,407.36,538.47,445.36 407.47,369.36,538.47,407.36 407.47,331.36,538.47,369.36", width="1.8125", height="1.5972"];
+	}
+	n14 [label="{&laquo;CSS»\nwebsite_example/css/a.css}", shape=record, style=filled, fillcolor=palegreen, pos="444.54,19.318", rects="361.04,0.31754,528.04,38.318", width="2.3125", height="0.54167"];
+	n15 [label="{&laquo;CSS»\nwebsite_example/css/main.css}", shape=record, style=filled, fillcolor=palegreen, pos="436,156.64", rects="342.5,137.64,529.5,175.64", width="2.5903", height="0.54167"];
+	n8 [label="{&laquo;CSS»\nwebsite_example/css/a.css}", shape=record, style=filled, fillcolor=palegreen, pos="140.9,132.54", rects="57.403,113.54,224.4,151.54", width="2.3125", height="0.54167"];
+	n5 [label="{&laquo;HTML»\nwebsite_example/b.html}", shape=record, style=filled, fillcolor=lavenderblush, pos="554.07,203.64", rects="478.57,184.64,629.57,222.64", width="2.0903", height="0.54167"];
+	n0 [label="{&laquo;HTML»\nwebsite_example/a.html}", shape=record, style=filled, fillcolor=lavenderblush, pos="231.23,179.54", rects="156.73,160.54,305.73,198.54", width="2.0625", height="0.54167"];
+	n17 [label="{&laquo;HTML»\nwebsite_example/c.html}", shape=record, style=filled, fillcolor=lavenderblush, pos="688.13,152.92", rects="613.13,133.92,763.13,171.92", width="2.0833", height="0.54167"];
+	n9 [label="{&laquo;HTML»\nwebsite_example/b.html}", shape=record, style=filled, fillcolor=lavenderblush, pos="316.96,95.623", rects="241.46,76.623,392.46,114.62", width="2.0903", height="0.54167"];
+	n3 [label="{&laquo;HTML»\nwebsite_example/c.html}", shape=record, style=filled, fillcolor=lavenderblush, pos="481.36,66.318", rects="406.36,47.318,556.36,85.318", width="2.0833", height="0.54167"];
+	n10 [label="{&laquo;HTML»\nwebsite_example/c.html}", shape=record, style=filled, fillcolor=lavenderblush, pos="304.91,277.74", rects="229.91,258.74,379.91,296.74", width="2.0833", height="0.54167"];
+	n4 [label="{&laquo;JavaScript»\nwebsite_example/js/s1.js}", shape=record, style=filled, fillcolor=aliceblue, pos="495.14,266.3", rects="418.14,247.3,572.14,285.3", width="2.1389", height="0.54167"];
+	n6 [label="{&laquo;JavaScript»\nwebsite_example/js/sClass.js}", shape=record, style=filled, fillcolor=aliceblue, pos="554.66,504.2", rects="465.66,485.2,643.66,523.2", width="2.4722", height="0.54167"];
+	n1 [label="{&laquo;CSS»\nwebsite_example/css/main.css|bar\lbody\lfoo\l}", shape=record, style=filled, fillcolor=palegreen, pos="226.14,369.3", rects="132.64,376.8,319.64,414.8 132.64,323.8,319.64,376.8", width="2.5972", height="1.2778"];
+	n7 [label="{&laquo;CSS»\nwebsite_example/css/a.css|p\l}", shape=record, style=filled, fillcolor=palegreen, pos="140.14,50.296", rects="56.645,42.796,223.64,80.796 56.645,19.796,223.64,42.796", width="2.3194", height="0.86111"];
+	n2 [label="{&laquo;JavaScript»\nwebsite_example/js/s.js|barFunc()\lbarFuncB()\l}", shape=record, style=filled, fillcolor=aliceblue, pos="73.145,247.3", rects="-0.35513,247.3,146.64,285.3 -0.35513,209.3,146.64,247.3", width="2.0417", height="1.0694"];
+	n3 -> n14 [pos="e,459.62,38.57 466.38,47.201 466.24,47.023 466.1,46.845 465.96,46.666"];
+	n6 -> n20 [pos="e,513.29,445.54 541.17,485.07 534.97,476.28 527.22,465.28 519.18,453.88"];
+	n5 -> n15 [pos="e,483.98,175.74 506.05,184.53 501.84,182.85 497.56,181.15 493.28,179.45"];
+	n0 -> n8 [pos="e,177.61,151.64 194.49,160.42 191.88,159.06 189.23,157.68 186.58,156.3"];
+	n5 -> n17 [pos="e,637.55,172.06 604.37,184.61 612.09,181.69 620.11,178.65 628.01,175.67"];
+	n0 -> n10 [pos="e,290.63,258.72 245.78,198.94 256.85,213.7 272.23,234.18 284.52,250.57"];
+	n0 -> n9 [pos="e,297.29,114.88 250.68,160.5 262.33,149.1 277.3,134.44 290.07,121.95"];
 }
