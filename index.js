@@ -7,7 +7,7 @@ exports.generateGraph = function(type,website_path,result_file,include_node_modu
 
 	relex.extract(website_path,include_node_modules,function(err,report){	
 		errorHandler(err);	
-		console.log("generating graph (could take sereval minutes)...")
+		console.log("generating graph (could take several minutes)...")
 		if(type == "jpg" || type == "png" || type == "svg" || type == "dot" || type == "pdf"){
 			graphvizClass.generateGraph(JSON.stringify(report),type,result_file,false,function(err){
 				errorHandler(err)
@@ -27,7 +27,7 @@ exports.generateGraph = function(type,website_path,result_file,include_node_modu
 
 };
 exports.generateGraphFromJSON = function(type,report,result_file,cbGenGraphtwo) {
-	console.log("generating graph (could take sereval minutes)...")
+		console.log("generating graph (could take several minutes)...")
 
 	if(type === "jpg" || type === "png" || type === "svg" || type === "dot" || type === "pdf" || type === "archvis"){
 
