@@ -1,34 +1,32 @@
 digraph G {
 	graph [splines=true, overlap=prism];
 	node [label="\N"];
-	graph [bb="0,0,644,524"];
-	subgraph cluster_5 {
+	graph [bb="0,0,658,753"];
+	subgraph cluster_4 {
 		graph [style=filled,
 			color=gray28,
 			fillcolor=gray90,
 			label="[inside website_example/js/sClass.js]",
-			bb="361.3,322.7,584.3,476.7"];
-		n20 [label="{&laquo;JavaScript Object»\nfooClass|string varA: a\lstring varB: b\l|fooFuncA()\lfooFuncB()\l}", shape=record, style=filled, fillcolor=CornflowerBlue, pos="472.97,388.36", rects="407.47,407.36,538.47,445.36 407.47,369.36,538.47,407.36 407.47,331.36,538.47,369.36", width="1.8125", height="1.5972"];
+			bb="-0.22989,598.97,222.77,752.97"];
+		n8 [label="{&laquo;JavaScript Object»\nfooClass|string varB: b\lstring varA: a\l|fooFuncA()\lfooFuncB()\l}", shape=record, style=filled, fillcolor=CornflowerBlue, pos="110.93,664.83", rects="45.43,683.83,176.43,721.83 45.43,645.83,176.43,683.83 45.43,607.83,176.43,645.83", width="1.8125", height="1.5972"];
 	}
-	n8 [label="{&laquo;CSS»\nwebsite_example/css/a.css}", shape=record, style=filled, fillcolor=palegreen, pos="425.54,171.32", rects="342.04,152.32,509.04,190.32", width="2.3125", height="0.54167"];
-	n15 [label="{&laquo;CSS»\nwebsite_example/css/main.css}", shape=record, style=filled, fillcolor=palegreen, pos="169.76,361.52", rects="76.257,342.52,263.26,380.52", width="2.5903", height="0.54167"];
-	n11 [label="{&laquo;CSS»\nwebsite_example/css/a.css}", shape=record, style=filled, fillcolor=palegreen, pos="140.9,132.54", rects="57.403,113.54,224.4,151.54", width="2.3125", height="0.54167"];
-	n10 [label="{&laquo;HTML»\nwebsite_example/c.html}", shape=record, style=filled, fillcolor=lavenderblush, pos="260.11,504.34", rects="185.11,485.34,335.11,523.34", width="2.0833", height="0.54167"];
-	n1 [label="{&laquo;HTML»\nwebsite_example/c.html}", shape=record, style=filled, fillcolor=lavenderblush, pos="462.36,218.32", rects="387.36,199.32,537.36,237.32", width="2.0833", height="0.54167"];
-	n0 [label="{&laquo;HTML»\nwebsite_example/a.html}", shape=record, style=filled, fillcolor=lavenderblush, pos="231.23,179.54", rects="156.73,160.54,305.73,198.54", width="2.0625", height="0.54167"];
-	n16 [label="{&laquo;HTML»\nwebsite_example/c.html}", shape=record, style=filled, fillcolor=lavenderblush, pos="316.96,95.623", rects="241.96,76.623,391.96,114.62", width="2.0833", height="0.54167"];
-	n2 [label="{&laquo;HTML»\nwebsite_example/b.html}", shape=record, style=filled, fillcolor=lavenderblush, pos="253.52,408.52", rects="178.02,389.52,329.02,427.52", width="2.0903", height="0.54167"];
-	n13 [label="{&laquo;HTML»\nwebsite_example/b.html}", shape=record, style=filled, fillcolor=lavenderblush, pos="304.91,277.74", rects="229.41,258.74,380.41,296.74", width="2.0903", height="0.54167"];
-	n5 [label="{&laquo;JavaScript»\nwebsite_example/js/sClass.js}", shape=record, style=filled, fillcolor=aliceblue, pos="554.66,504.2", rects="465.66,485.2,643.66,523.2", width="2.4722", height="0.54167"];
-	n4 [label="{&laquo;JavaScript»\nwebsite_example/js/s1.js}", shape=record, style=filled, fillcolor=aliceblue, pos="77.145,437.3", rects="0.14487,418.3,154.14,456.3", width="2.1389", height="0.54167"];
-	n7 [label="{&laquo;CSS»\nwebsite_example/css/a.css|p\l}", shape=record, style=filled, fillcolor=palegreen, pos="140.14,50.296", rects="56.645,42.796,223.64,80.796 56.645,19.796,223.64,42.796", width="2.3194", height="0.86111"];
-	n6 [label="{&laquo;CSS»\nwebsite_example/css/main.css|foo\lbar\lbody\l}", shape=record, style=filled, fillcolor=palegreen, pos="511.14,46.296", rects="417.64,53.796,604.64,91.796 417.64,0.79626,604.64,53.796", width="2.5972", height="1.2778"];
-	n3 [label="{&laquo;JavaScript»\nwebsite_example/js/s.js|barFuncB()\lbarFunc()\l}", shape=record, style=filled, fillcolor=aliceblue, pos="130.14,266.3", rects="56.645,266.3,203.64,304.3 56.645,228.3,203.64,266.3", width="2.0417", height="1.0694"];
-	n0 -> n16 [pos="e,297.29,114.88 250.68,160.5 262.33,149.1 277.3,134.44 290.07,121.95"];
-	n2 -> n10 [pos="e,258.8,485.3 254.85,427.91 255.79,441.51 257.06,459.92 258.11,475.27"];
-	n0 -> n13 [pos="e,290.63,258.72 245.78,198.94 256.85,213.7 272.23,234.18 284.52,250.57"];
-	n0 -> n11 [pos="e,177.61,151.64 194.49,160.42 191.88,159.06 189.23,157.68 186.58,156.3"];
-	n5 -> n20 [pos="e,513.29,445.54 541.17,485.07 534.97,476.28 527.22,465.28 519.18,453.88"];
-	n2 -> n15 [pos="e,203.8,380.62 219.45,389.4 217.19,388.14 214.9,386.85 212.6,385.56"];
-	n1 -> n8 [pos="e,440.62,190.57 447.38,199.2 447.24,199.02 447.1,198.84 446.96,198.67"];
+	n3 [label="{&laquo;HTML»\nwebsite_example/b.html}", shape=record, style=filled, fillcolor=lavenderblush, pos="235.76,221.99", rects="160.26,202.99,311.26,240.99", width="2.0903", height="0.54167"];
+	n5 [label="{&laquo;HTML»\nwebsite_example/c.html}", shape=record, style=filled, fillcolor=lavenderblush, pos="318.64,401.77", rects="243.64,382.77,393.64,420.77", width="2.0833", height="0.54167"];
+	n0 [label="{&laquo;HTML»\nwebsite_example/a.html}", shape=record, style=filled, fillcolor=lavenderblush, pos="507.64,375.34", rects="433.14,356.34,582.14,394.34", width="2.0625", height="0.54167"];
+	n7 [label="{&laquo;JavaScript»\nwebsite_example/js/s1.js}", shape=record, style=filled, fillcolor=aliceblue, pos="580.94,523.23", rects="503.94,504.23,657.94,542.23", width="2.1389", height="0.54167"];
+	n4 [label="{&laquo;JavaScript»\nwebsite_example/js/sClass.js}", shape=record, style=filled, fillcolor=aliceblue, pos="319.77,593.67", rects="230.77,574.67,408.77,612.67", width="2.4722", height="0.54167"];
+	n1 [label="{&laquo;CSS»\nwebsite_example/css/a.css|p\l}", shape=record, style=filled, fillcolor=palegreen, pos="517.29,164.91", rects="433.79,157.41,600.79,195.41 433.79,134.41,600.79,157.41", width="2.3125", height="0.86111"];
+	n2 [label="{&laquo;CSS»\nwebsite_example/css/main.css|body\lfoo\lbar\l}", shape=record, style=filled, fillcolor=palegreen, pos="271.21,45.96", rects="177.71,53.46,364.71,91.46 177.71,0.46036,364.71,53.46", width="2.5903", height="1.2778"];
+	n6 [label="{&laquo;JavaScript»\nwebsite_example/js/s.js|barFuncB()\lbarFunc()\l}", shape=record, style=filled, fillcolor=aliceblue, pos="127.01,383.52", rects="53.506,383.52,200.51,421.52 53.506,345.52,200.51,383.52", width="2.0347", height="1.0694"];
+	n3 -> n6 [pos="e,152.71,345.34 222.86,241.15 207.05,264.63 179.74,305.2 158.3,337.04"];
+	n5 -> n6 [pos="e,200.72,390.54 243.45,394.61 232.81,393.59 221.8,392.54 211,391.52"];
+	n5 -> n1 [pos="e,491.57,195.58 334.9,382.38 367.62,343.37 441.96,254.73 484.95,203.47"];
+	n0 -> n3 [pos="e,269.64,241.1 473.76,356.23 424.37,328.38 332.64,276.64 278.62,246.17"];
+	n0 -> n5 [pos="e,393.73,391.27 432.95,385.79 423.37,387.12 413.52,388.5 403.79,389.86"];
+	n5 -> n4 [pos="e,319.66,574.65 318.76,420.87 318.95,454.56 319.37,524.75 319.6,564.53"];
+	n3 -> n5 [pos="e,309.84,382.66 244.63,241.23 259.27,272.99 288.58,336.55 305.59,373.45"];
+	n0 -> n7 [pos="e,571.31,503.81 517.07,394.38 529.7,419.86 552.21,465.28 566.86,494.82"];
+	n0 -> n1 [pos="e,515.89,195.5 508.52,356.3 510.07,322.41 513.34,250.97 515.43,205.6"];
+	n4 -> n8 [pos="e,176.69,642.42 263.8,612.74 240.02,620.85 211.93,630.42 186.35,639.13"];
+	n3 -> n2 [pos="e,262,91.709 239.62,202.82 244.47,178.73 253.01,136.35 259.98,101.72"];
 }
