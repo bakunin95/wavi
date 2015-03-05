@@ -4,7 +4,7 @@
   },
   "email": "jugle66@hotmail.com",
   "name": "wavi",
-  "version": "0.2.6",
+  "version": "0.2.7",
   "main": "./index.js",
   "url": "https://github.com/bakunin95/wavi",
   "repository": {
@@ -41,10 +41,11 @@
     "commander": "^2.3.0",
     "graceful-fs": "^3.0.2",
     "graphviz": "0.0.8",
+    "jugglingdb": "^0.3.0",
+    "jugglingdb-sqlite3": "0.0.5",
     "log": "^1.4.0",
-    "nedb": "^0.11.1",
     "process": "^0.7.0",
-    "relex": "^0.2.11",
+    "relex": "^0.2.12",
     "require-dir": "^0.1.0",
     "underscore": "^1.7.0"
   },

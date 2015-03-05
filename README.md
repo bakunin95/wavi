@@ -1,13 +1,14 @@
 ##WAVI Web Application Viewer (Node.js)
 
 Generate a class diagram graph for node.js web application inspired by the Web Application Extension (WAE) for UML.
-It is also possible to generate a json report listing files and their relations with metrics.
 
 WAVI is intended for developers who wish to document their web application or as a reverse engineering tool to recover 
 the structure of a web application.
 
+Web applications pose unique challenges when it comes to understanding and maintaining their heterogeneous structures, which often involve complex interactions between elements from different languages. Accurate and up-to-date documentation is rarely available and this calls for the proposal of reverse engineering approaches for the recovery and representation of such structures. The proposed package presents our ongoing work on Web Application Viewer (WAVE), a tool able to reverse engineer a web application's structure.
 
-## Dependency
+
+## Dependencies
 ```
 Require Graphviz installed and PATH variable for Graphviz in your environment variable.
 
