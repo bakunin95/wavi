@@ -1,8 +1,4 @@
-#!/usr/local/bin/node
-
-/**
- * Module dependencies.
- */
+#!/usr/bin/env node
 
 var program = require('commander'),
     constants = require( '../lib/deps/utilities/constants' );
