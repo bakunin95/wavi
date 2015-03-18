@@ -23,8 +23,9 @@ Require Graphviz installed and PATH variable for Graphviz in your environment va
 It is strongly advised to use svg format for very large website because jpg/png/pdf are limited in width and height and will most likly not work
 or use ratio and the quality will be bad.
 
-wavi --format path/to/website path/to/result/file.type
+wavi --format path/to/website path/to/result/file
 
+Example:
 
 ```
 wavi --svg website/example result/example.svg
@@ -39,6 +40,15 @@ wavi --dot website/example result/example.dot
 
 wavi --svg website/example result/example.svg --includenodemodules
 
+```
+
+In Ubuntu: 
+make sure you add /usr/local/bin to your PATH or use absolute path to wavi.
+
+Example:
+
+```
+nodejs /usr/local/bin/wavi --svg ./path/to/website ./graph.png
 ```
 
 ##Usage: 
@@ -75,15 +85,6 @@ Here are the result of wavi on a couple of framework.
 [More at the wavi blog](https://blogwavi.wordpress.com/)
 
 ##TROUBLESHOOTING
-
--If you get a RangeError 
-```
-RangeError: Maximum call stack size exceeded
-```
-This means that the website is too big to generate a diagram. You can divide the diagram by pointing subfolders instead of pointing to the whole web application.
-"node_modules" often contain too much information for wavi, it is a good idea not to include this folder by not using 
---includenodemodules parameter.
-
 
 -If your web application is too large and your image is empty or the quality of the image is bad, this means that there is
 not sufficent space to draw the diagram. Try using "svg" format.
