@@ -1,6 +1,5 @@
-var relex = require('relex');
+var relex = require('./lib/extractor/index.js');
 var graphvizClass = require('./lib/deps/graphvizClass');
-
 
 
 exports.generateGraph = function(type,website_path,result_file,include_node_modules,cbGenGraph) {
@@ -37,6 +36,15 @@ exports.generateGraphFromJSON = function(type,report,result_file,cbGenGraphtwo) 
 			
 
 			cbGenGraphtwo(err,"");
+		}); 
+	}
+	else if(type === "waviserver"){
+		graphvizClass.generateGraph(JSON.stringify(report),type,result_file,true,function(err,res){
+			
+			errorHandler(err);
+			
+
+			cbGenGraphtwo(err,res);
 		}); 
 	}
 	else{

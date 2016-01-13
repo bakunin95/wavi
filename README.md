@@ -1,6 +1,19 @@
 ##WAVI Web Application Viewer (Node.js)
 
-Generate a class diagram graph for node.js web application inspired by the Web Application Extension (WAE) for UML.
+Generate a class diagram for your node.js web application.
+
+## Installation
+
+    $ npm install wavi -g
+
+```
+## Dependencies
+```
+Require Graphviz installed and PATH variable set for Graphviz in your environment variable.
+(ex.: C:\Program Files (x86)\Graphviz2.38\bin)
+
+Graphviz download:  http://www.graphviz.org/Download.php
+```
 
 WAVI is intended for developers who wish to document their web application or as a reverse engineering tool to recover 
 the structure of a web application.
@@ -8,15 +21,7 @@ the structure of a web application.
 Web applications pose unique challenges when it comes to understanding and maintaining their heterogeneous structures, which often involve complex interactions between elements from different languages. Accurate and up-to-date documentation is rarely available and this calls for the proposal of reverse engineering approaches for the recovery and representation of such structures. The proposed package presents our ongoing work on Web Application Viewer (WAVE), a tool able to reverse engineer a web application's structure.
 
 
-## Dependencies
-```
-Require Graphviz installed and PATH variable for Graphviz in your environment variable.
 
-## Installation
-
-    $ npm install wavi -g
-
-```
 
 ##Usage (CLI): 
 
@@ -51,22 +56,6 @@ Example:
 nodejs /usr/local/bin/wavi --svg ./path/to/website ./graph.png
 ```
 
-##Usage: 
-
-wavi.generateGraph("format","website/example","result/file.type",includenodemodules ...
-
-```
-var wavi = require("wavi");
-
-wavi.generateGraph("svg","website/example","result/example2.svg",false,function(err){
-
-});
-```
-
-##Parameter
-
---includenodemodules : include node_modules folder, use this parameter to include relations of "node_modules" folder.
-
 
 ##Example:
 
@@ -89,12 +78,10 @@ Here are the result of wavi on a couple of framework.
 -If your web application is too large and your image is empty or the quality of the image is bad, this means that there is
 not sufficent space to draw the diagram. Try using "svg" format.
 
--Do not run wavi in the root of your web application like:
+-Make sure Graphviz is installed and PATH variable is set for Graphviz in your environment variable.
+(ex.: C:\Program Files (x86)\Graphviz2.38\bin)
 
-wavi --pdf . result/example.pdf
-
-This does not work yet. Instead run wavi from a parent folder like in the example.
-
+Graphviz download:  http://www.graphviz.org/Download.php
 
 ##Contributions
 

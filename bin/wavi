@@ -4,7 +4,7 @@ var program = require('commander'),
     constants = require( '../lib/deps/utilities/constants' );
 
 program
-  .version('0.2.1')
+  .version('1.0.0')
   .option('--json', 'generate json report')
   .option('--jpg', 'generate jpg graph')
   .option('--png', 'generate png graph')
@@ -13,6 +13,8 @@ program
   .option('--dot', 'generate dot graph')
   .option('--includenodemodules', 'include node_modules folder')
   .parse(process.argv);
+
+  global.program_args = program.args;
 
   if(program.args.length == 0){
 		console.log(program.help());
