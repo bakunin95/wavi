@@ -23,7 +23,7 @@
   "dependencies": {
     "acorn": "^4.0.4",
     "acorn-umd": "^0.4.0",
-    "async": "^2.0.0-rc.2",
+    "async": "^2.1.4",
     "cheerio": "^0.22.0",
     "co": "^4.6.0",
     "css": "^2.2.1",

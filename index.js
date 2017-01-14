@@ -31,13 +31,8 @@ class Wavi {
 
 
     analyze(options, website_folder, website_target) {
-        console.log(website_folder + " " + website_target)
 
-
-
-
-
-        console.log("Processing website: " + website_folder);
+    console.log("Processing website: " + path.normalize(process.cwd() + website_folder));
 
         var identifiedFiles;
 
@@ -75,7 +70,7 @@ class Wavi {
                 } catch (e) { }
 
             }
-            console.log("finished analyzing, now generating")
+            console.log("finished analyzing, now generating graph")
 
             let resultSvg = graph.generateGraph(dotResult);
 
