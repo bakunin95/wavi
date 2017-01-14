@@ -7,17 +7,25 @@ var _ = require('underscore')._;
 let options = {};
 
 
-options.EXPERIMENTAL = false;
-
-var website_folder = ".";
-if (!_.isUndefined(process.argv[2])) {
-    var website_folder = utils.normalize(process.argv[2]);
+if (_.isUndefined(process.argv[2]) || process.argv[2] === ".") {
+    console.log("You need to provide the path to the folder you want to analyze.");
+    console.log("ex: wavi path/to/website path/to/resultfile/graph.svg");
 }
+else {
 
-var website_target = "graph.svg";
-if (!_.isUndefined(process.argv[3])) {
-    website_target = utils.normalize(process.argv[3]);
+    options.EXPERIMENTAL = false;
+
+    var website_folder = "";
+    if (!_.isUndefined(process.argv[2])) {
+        var website_folder = utils.normalize(process.argv[2]);
+    }
+
+    var website_target = "graph.svg";
+    if (!_.isUndefined(process.argv[3])) {
+        website_target = utils.normalize(process.argv[3]);
+    }
+    var wavi = require('../index');
+
+    wavi.analyze(options, website_folder, website_target);
+
 }
-var wavi = require('../index');
-
-wavi.analyze(options,website_folder,website_target);

@@ -1,6 +1,6 @@
 {
   "name": "wavi",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "description": "Generate a class diagram for node.js web application inspired by the Web Application Extension (WAE) for UML. Document your application with wavi.",
   "main": "index.js",
   "url": "https://github.com/bakunin95/wavi",

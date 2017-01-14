@@ -19,7 +19,7 @@ Install WAVI package using npm.
 
 The first argument is the path to the website to be analyzed and the second argument is the path where the svg graph will be generated.
 
-wavi path/to/website path/to/result/file
+wavi path/to/website path/to/resultfile/graph.svg
 
 Example:
 
