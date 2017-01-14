@@ -33,7 +33,7 @@ wavi . graph.jpg
 
 ## Example:
 
-![Example](/example/graph.png?raw=true "Example")
+![Example](/example/graph.jpg?raw=true "Example")
 
 
 [More at the wavi blog](https://blogwavi.wordpress.com/)
