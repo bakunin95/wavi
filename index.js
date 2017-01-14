@@ -32,7 +32,7 @@ class Wavi {
 
     analyze(options, website_folder, website_target) {
 
-    console.log("Processing website: " + path.normalize(process.cwd() + website_folder));
+    console.log("Processing website: " + path.normalize(process.cwd() +"/"+ website_folder).replace("\\", "/"));
 
         var identifiedFiles;
 
