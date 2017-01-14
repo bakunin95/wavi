@@ -1,6 +1,6 @@
 ##WAVI Web Application Viewer 2.0 (Node.js)
 
-Generate a class diagram for your node.js web application.
+Generate a svg class diagram for your node.js web application.
 
 WAVI is intended for developers who wish to document their web application or as a reverse engineering tool to recover 
 the structure of a web application.
@@ -13,6 +13,8 @@ Web applications pose unique challenges when it comes to understanding and maint
 Install WAVI package using npm.
 
     $ npm install wavi -g
+
+Require node.js 7.0.0 or above.
 
 
 ## Usage in your terminal (CLI): 
@@ -27,6 +29,13 @@ Example:
 wavi website/example result/example.svg
 
 ```
+
+## In Ubuntu: 
+
+Make sure you add /usr/local/bin to your environment variable PATH or use absolute path to wavi.
+If you use nodejs instead of node as variable, you can run wavi this way:
+
+    $ nodejs /usr/local/bin/wavi /path/to/website graph.png
 
 
 ## Example:
