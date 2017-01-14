@@ -1,23 +1,23 @@
 #!/usr/bin/env node
 
-var program = require('commander'),
-    constants = require( '../lib/deps/utilities/constants' );
+var utils = require("../utils/utils");
+var _ = require('underscore')._;
 
-program
-  .version('1.0.0')
-  .option('--json', 'generate json report')
-  .option('--jpg', 'generate jpg graph')
-  .option('--png', 'generate png graph')
-  .option('--pdf', 'generate pdf graph')
-  .option('--svg', 'generate svg graph')
-  .option('--dot', 'generate dot graph')
-  .option('--includenodemodules', 'include node_modules folder')
-  .parse(process.argv);
 
-  global.program_args = program.args;
+let options = {};
 
-  if(program.args.length == 0){
-		console.log(program.help());
-  }
 
-require('../lib/main')(program);
+options.EXPERIMENTAL = false;
+
+var website_folder = ".";
+if (!_.isUndefined(process.argv[2])) {
+    var website_folder = utils.normalize(process.argv[2]);
+}
+
+var website_target = "graph.svg";
+if (!_.isUndefined(process.argv[3])) {
+    website_target = utils.normalize(process.argv[3]);
+}
+var wavi = require('../index');
+
+wavi.analyze(options,website_folder,website_target);
