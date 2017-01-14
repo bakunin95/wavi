@@ -26,8 +26,6 @@ Example:
 ```
 wavi website/example result/example.svg
 
-wavi . graph.jpg
-
 ```
 
 
