@@ -49,7 +49,7 @@ You can run wavi this way using nodejs keyword and you can also use the absolute
 
 ## Example:
 
-![Example](/example/graph.jpg?raw=true "Example")
+![Example](/es5/example/graph.jpg?raw=true "Example")
 
 
 [More at the wavi blog](https://blogwavi.wordpress.com/)
