@@ -1,4 +1,4 @@
-##WAVI Web Application Viewer 2.0 (Node.js)
+##WAVI Web Application Viewer 2 (Node.js)
 
 Generate a svg class diagram for your node.js web application.
 
@@ -16,6 +16,9 @@ Install WAVI package using npm.
 
 Require node.js 7.0.0 or above.
 
+In Ubuntu, add sudo:
+
+    $ sudo npm install wavi -g
 
 ## Usage in your terminal (CLI): 
 
@@ -33,7 +36,11 @@ wavi website/example result/example.svg
 ## In Ubuntu: 
 
 Make sure you add /usr/local/bin to your environment variable PATH or use absolute path to wavi.
-If you use nodejs instead of node as variable, you can run wavi this way:
+If you use nodejs instead of node you will get this error:
+
+### "node\r": No such file or directory
+
+You can run wavi this way using nodejs keyword and you can also use the absolute path to wavi:
 
     $ nodejs /usr/local/bin/wavi /path/to/website graph.png
 

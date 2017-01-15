@@ -1,10 +1,10 @@
 #!/usr/bin/env node
 
-var utils = require("../utils/utils");
+var path = require("path");
 var _ = require('underscore')._;
 
 
-let options = {};
+var options = {};
 
 
 if (_.isUndefined(process.argv[2]) || process.argv[2] === ".") {
@@ -17,14 +17,14 @@ else {
 
     var website_folder = "";
     if (!_.isUndefined(process.argv[2])) {
-        var website_folder = utils.normalize(process.argv[2]);
+        var website_folder = path.normalize(process.argv[2]);
     }
 
     var website_target = "graph.svg";
     if (!_.isUndefined(process.argv[3])) {
-        website_target = utils.normalize(process.argv[3]);
+        website_target = path.normalize(process.argv[3]);
     }
-    var wavi = require('../index');
+    var wavi = require('../es5/index');
 
     wavi.analyze(options, website_folder, website_target);
 

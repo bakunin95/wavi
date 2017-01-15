@@ -1,32 +1,31 @@
+'use strict';
+
+require("babel-polyfill");
 var Viz = require('./viz.js');
 var utils = require('../utils/utils');
 var _ = require('underscore')._;
 
-
 var fs = require("fs");
-
-
 
 module.exports = {
 
-        createDot: function (options, classes, relations) {
+        createDot: function createDot(options, classes, relations) {
 
-                let graph_settings = "";
+                var graph_settings = "";
                 if (options.EXPERIMENTAL === true) {
                         graph_settings = "layout=fdp";
-                }
-                else {
+                } else {
                         //
                         graph_settings = "compound=true;\n splines=true;\n labeljust=left; rankdir=TB;\n  overlap=false; \n ranksep=0.1;  nodesep=0.1";
                 }
 
                 var USE_RANKING = false;
-                let dotResult = [];
+                var dotResult = [];
 
                 //
-                let txt = "digraph G {\n "+graph_settings+"  \n ";
-                let cluster = 0;
-                let current_cluster = "";
+                var txt = "digraph G {\n " + graph_settings + "  \n ";
+                var cluster = 0;
+                var current_cluster = "";
 
                 var sortedClasses = _.sortBy(classes, 'cluster');
 
@@ -44,8 +43,7 @@ module.exports = {
                                 cluster++;
                         }
 
-                        let methods = [];
-
+                        var methods = [];
 
                         _.each(classe.methods, function (method) {
                                 methods.push(method + "\\l");
@@ -53,43 +51,33 @@ module.exports = {
 
                         methods = _.unique(methods).sort();
 
-                        let properties = [];
+                        var properties = [];
                         _.each(classe.properties, function (property) {
                                 properties.push(property + "\\l");
                         });
 
                         properties = _.unique(properties).sort();
 
-
-                        if (classe.type === "css") {
-
-                        }
-
-
-                        else if (classe.is_global === true) {
+                        if (classe.type === "css") {} else if (classe.is_global === true) {
                                 classe.type = "Global";
                                 classe.name = "";
                         }
 
-
-
-                        let title = "";
+                        var title = "";
                         if (!_.isUndefined(classe.type)) {
-                                title = " \«" + classe.type.toUpperCase() + "»\\n "
+                                title = " \«" + classe.type.toUpperCase() + "»\\n ";
                         }
                         title += classe.name;
 
-
-                        propsep = "";
+                        var propsep = "";
                         if (properties.length > 0) {
                                 propsep = '|';
                         }
 
-                        methodsep = "";
+                        var methodsep = "";
                         if (methods.length > 0) {
                                 methodsep = '|';
                         }
-
 
                         txt += classe.key + '[label = "{' + title + propsep + properties.join("") + methodsep + methods.join("") + '}", fillcolor=' + classe.fill + ']\n ';
                 });
@@ -97,13 +85,12 @@ module.exports = {
                 //*************************************** */
 
                 if (USE_RANKING) {
-                        let rank = []
+                        var rank = [];
 
-
-                        let total_clusters = cluster;
+                        var total_clusters = cluster;
                         //
-                        let count = 0;
-                        let rk = "";
+                        var count = 0;
+                        var rk = "";
                         for (index = 0; index < total_clusters; ++index) {
                                 count++;
                                 rk += index + " ";
@@ -112,25 +99,21 @@ module.exports = {
                                         rank.push("{rank=same " + rk + "}");
                                         rk = "";
                                 }
-
-
                         }
                         if (rk != "") {
                                 rank.push("{rank=same " + rk + "}");
                         }
 
-                        let ranking = rank.join(" -> ") + "[style=invis]";
-
+                        var ranking = rank.join(" -> ") + "[style=invis]";
 
                         txt += ranking;
                 }
 
                 //************************************************************* */
-                txt += "\n}\n"
+                txt += "\n}\n";
                 _.each(relations, function (relation) {
 
-
-                        let arrowstyle = "";
+                        var arrowstyle = "";
 
                         if (relation.relationship === "composition") {
                                 arrowstyle = "arrowtail=diamond dir=back";
@@ -138,29 +121,25 @@ module.exports = {
 
                         if (relation.cluster === true) {
                                 txt += relation.from + "->" + relation.to + " [ " + arrowstyle + "ltail=cluster_" + relation.from + "," + "lhead=cluster_" + relation.to + "] \n";
-                        }
-                        else {
+                        } else {
                                 txt += relation.from + "->" + relation.to + " [" + arrowstyle + "]   \n";
                         }
-
                 });
                 txt += "}";
 
                 //utils.append('test.dot', txt);
 
                 return txt;
-
         },
-        generateGraph: function (dotResult) {
+        generateGraph: function generateGraph(dotResult) {
 
                 try {
                         return Viz(dotResult, "svg");
-
                 } catch (e) {
-                        console.log(e)
+                        console.log(e);
                         return;
                 }
-
         }
 
-}
+};
+//# sourceMappingURL=graph.js.map

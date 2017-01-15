@@ -1,3 +1,4 @@
+require("babel-polyfill");
 var _ = require('underscore')._;
 var async = require("async");
 var scan = require("./scan");

@@ -1,6 +1,5 @@
-
 "use strict";
-
+require("babel-polyfill");
 //NodeJS dependencies
 var co = require('co');
 var path = require('path');
@@ -18,6 +17,8 @@ var javascript_parser = require("./parsers/javascript");
 var graph = require("./lib/graph");
 var db = require("./lib/database");
 
+
+
 let instance = null;
 
 class Wavi {
@@ -32,7 +33,11 @@ class Wavi {
 
     analyze(options, website_folder, website_target) {
 
-    console.log("Processing website: " + path.normalize(process.cwd() +"/"+ website_folder).replace("\\", "/"));
+        website_folder = path.resolve(website_folder).replace(/\\/g, '\/');
+        website_target = path.resolve(website_target).replace(/\\/g, '\/');
+
+
+        console.log("Processing website: " + website_folder);
 
         var identifiedFiles;
 
@@ -76,11 +81,7 @@ class Wavi {
 
             yield utils.writefile(website_target)(resultSvg);
 
-
-
-            website_target = path.normalize(process.cwd() + "/" + website_target);
-
-            console.log("Graph generated: " + website_target.replace(/\\/g, '\/'));
+            console.log("Graph generated: " + website_target);
 
             utils.stopTimer();
         }).catch(instance.onerror);
