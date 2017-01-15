@@ -38,7 +38,9 @@ wavi website/example result/example.svg
 Make sure you add /usr/local/bin to your environment variable PATH or use absolute path to wavi.
 If you use nodejs instead of node you will get this error:
 
-### "node\r": No such file or directory
+```
+"node\r": No such file or directory
+```
 
 You can run wavi this way using nodejs keyword and you can also use the absolute path to wavi:
 
