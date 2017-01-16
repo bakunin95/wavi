@@ -14,7 +14,6 @@ Install WAVI package using npm.
 
     $ npm install wavi -g
 
-Require node.js 7.0.0 or above.
 
 In Ubuntu, add sudo:
 
