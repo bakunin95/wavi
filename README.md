@@ -43,7 +43,7 @@ If you use nodejs instead of node you will get this error:
 
 You can run wavi this way using nodejs keyword and you can also use the absolute path to wavi:
 
-    $ nodejs /usr/local/bin/wavi /path/to/website graph.png
+    $ nodejs /usr/local/bin/wavi /path/to/website graph.svg
 
 
 ## Example:
