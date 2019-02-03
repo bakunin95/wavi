@@ -1,4 +1,4 @@
-##WAVI Web Application Viewer 2 (Node.js)
+# WAVI Web Application Viewer 2 (Node.js)
 
 Generate a svg class diagram for your node.js web application.
 
