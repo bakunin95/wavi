@@ -1,4 +1,4 @@
-##WAVI Web Application Viewer 2 (Node.js)
+# WAVI Web Application Viewer 2 (Node.js)
 
 Generate a svg class diagram for your node.js web application.
 
@@ -54,7 +54,7 @@ You can run wavi this way using nodejs keyword and you can also use the absolute
 [More at the wavi blog](https://blogwavi.wordpress.com/)
 
 
-##Contributions
+## Contributions
 
 This is a pproject to help developers generate quality class diagram. WAVI is in development and all contributions are welcomed.
 For more info on the project contact me at jugle66@hotmail.com
